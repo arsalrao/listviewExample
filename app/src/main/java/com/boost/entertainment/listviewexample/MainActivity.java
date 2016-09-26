@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView listView = (ListView) findViewById(R.id.listview);
         Button insertButton = (Button) findViewById(R.id.insert);
         final EditText nameText = (EditText) findViewById(R.id.edittext);
-
+        //creating Arraylist
 
         ArrayList<String> names = new ArrayList<>();
 
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 nameText.setText("");
                 Toast.makeText(MainActivity.this, name+" is added", Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
+                
 
 
             }
